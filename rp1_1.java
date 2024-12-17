@@ -3,6 +3,11 @@ public class rp1_1 {
         String str;
         str = null;
 
-        System.out.println(str.length());
+        try {
+            System.out.println(str.length());
+        } catch (NullPointerException e) {
+            System.out.println("NullPointerException が発生しました。");
+            System.out.println(e.getMessage());
+        }
     }
 }
